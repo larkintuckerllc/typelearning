@@ -18,5 +18,5 @@ def run() -> None:
         )
     )
     metadata = resource.read_metadata(('name',))
-    # metadata = resource.read_metadata(('named',))
+    # metadata = resource.read_metadata(('funky',))
     print(has_name(metadata))
