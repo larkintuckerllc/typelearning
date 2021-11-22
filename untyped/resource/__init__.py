@@ -9,7 +9,7 @@ class Resource:
         self.id = id
         self.metadata = {}
         for item in items:
-            self.metadata[item.key] = item.value
+            self.metadata[item.key] = item
 
     def read_metadata(self, items):
         metadata = {}
@@ -17,5 +17,5 @@ class Resource:
             if item in self.metadata:
                 metadata[item] = self.metadata[item]
         # if metadata == {}:
-            # return None
+        #    return None
         return metadata

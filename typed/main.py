@@ -10,7 +10,7 @@ def has_name(metadata: Dict[str, MetadataItem]) -> bool:
     return 'name' in metadata
 
 
-def run():
+def run() -> None:
     resource = Resource(
         b'000',
         (
